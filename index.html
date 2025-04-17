@@ -1,16 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official website of Taher Kotwal aka TAHERO - Data Science Enthusiast, YouTuber, Maths Tutor from India.">
+  <meta name="description" content="Official Website of Taher Kotwal aka TAHERO - Data Scientist, YouTuber, and Maths Tutor from India.">
   <title>Taher Kotwal | TAHERO</title>
   <style>
     :root {
-      --primary-color: #00bcd4;
-      --background-color: #121212;
-      --text-color: #e0e0e0;
-      --accent-color: #ff4081;
+      --primary-color: #6366F1;
+      --background-color: #0F172A;
+      --text-color: #F8FAFC;
+      --accent-color: #EC4899;
+      --card-color: #1E293B;
     }
     * {
       margin: 0;
@@ -22,61 +23,85 @@
       font-family: 'Poppins', sans-serif;
       background: var(--background-color);
       color: var(--text-color);
-      line-height: 1.6;
+      line-height: 1.7;
     }
     header {
-      background: var(--primary-color);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
-      animation: fadeIn 1s ease-in-out;
+      padding: 4rem 1rem 3rem;
+      animation: fadeIn 1.5s ease-in-out;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
     }
     header p {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      opacity: 0.9;
     }
     section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
+      padding: 4rem 2rem;
+      max-width: 1100px;
       margin: auto;
       animation: fadeInUp 1.5s ease-in-out;
     }
     h2 {
+      font-size: 2.5rem;
       color: var(--accent-color);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: var(--primary-color);
+      left: 0;
+      bottom: -10px;
+      border-radius: 2px;
+    }
+    p, li {
+      font-size: 1.2rem;
       margin-bottom: 1rem;
-      font-size: 2rem;
-      border-bottom: 2px solid var(--primary-color);
-      display: inline-block;
     }
     ul {
-      list-style-type: square;
-      margin-left: 2rem;
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: "✔️";
+      margin-right: 0.7rem;
+      color: var(--accent-color);
+    }
+    .links {
+      text-align: center;
+      margin-top: 3rem;
     }
     .links a {
       display: inline-block;
-      margin: 1rem 1rem 0 0;
-      padding: 0.7rem 1.5rem;
-      background: var(--accent-color);
+      margin: 0.7rem;
+      padding: 0.8rem 2rem;
+      background: var(--primary-color);
       color: white;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
-      transition: transform 0.3s, background 0.3s;
+      transition: background 0.3s, transform 0.3s;
     }
     .links a:hover {
-      background: #ff79a8;
+      background: var(--accent-color);
       transform: translateY(-5px);
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: #1f1f1f;
-      color: #777;
+      padding: 2rem;
+      background: #1E293B;
+      color: #94A3B8;
       font-size: 0.9rem;
-      margin-top: 3rem;
+      margin-top: 4rem;
       animation: fadeIn 2s ease-in-out;
     }
 
@@ -86,14 +111,16 @@
       to {opacity: 1;}
     }
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {font-size: 2.5rem;}
+      header p {font-size: 1.2rem;}
+      h2 {font-size: 2rem;}
+      p, li {font-size: 1rem;}
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -108,9 +135,9 @@
 
 <section>
   <h2>About Me</h2>
-  <p>I am a passionate creator, YouTuber, maths tutor, and aspiring data scientist from India. Known for my creative edits on movies, anime, and politics, I’ve built a growing community of 1.3k+ subscribers on YouTube.</p>
+  <p>I am a passionate creator, YouTuber, Maths tutor, and an aspiring Data Scientist from India. Known for my creative edits on movies, anime, and politics, I’ve built a growing community of 1.3k+ subscribers on YouTube.</p>
   <p>Beyond content creation, I’m a top academic achiever — scoring 90.80% in SSC and 84.17% in HSC — earning scholarships and excellence awards. Currently pursuing SY BBA(CA), I have completed the IBM Data Science Professional Certificate and job simulations with Deloitte, PwC, Tata, and MasterCard.</p>
-  <p>My dream is to become a master of Data Science, Mathematics, and Statistics — and leave a mark in both the tech and creative worlds. Driven by ambition, passion, and a never-give-up attitude, I am TAHERO — the hero of my own journey.</p>
+  <p>My dream is to master Data Science, Mathematics, and Statistics — and leave a mark in both the tech and creative worlds. Driven by ambition, passion, and a never-give-up attitude, I am TAHERO — the hero of my own journey.</p>
 </section>
 
 <section>
@@ -129,10 +156,11 @@
   <a href="https://www.youtube.com/@taher_editz" target="_blank">YouTube</a>
   <a href="https://www.kaggle.com/taherkotwal" target="_blank">Kaggle</a>
   <a href="https://www.instagram.com/kotwaltaher12" target="_blank">Instagram</a>
+  <a href="https://www.linkedin.com/in/taherkotwal" target="_blank">LinkedIn</a>
 </section>
 
 <footer>
-  © 2025 Taher Kotwal | All Rights Reserved
+  © 2025 Taher Kotwal | Built with Passion & Dreams
 </footer>
 
 </body>
