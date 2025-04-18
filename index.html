@@ -126,10 +126,15 @@
 
     /* Hidden Content but SEO Visible */
     .no-display {
-      visibility: hidden; /* Or position: absolute; left: -9999px; */
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
-  </style>
 
+  </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Structured Data for SEO -->
